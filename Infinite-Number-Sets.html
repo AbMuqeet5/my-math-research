@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Infinite Number Sets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        h1, h2, h3, h4 {
+            text-align: center;
+            margin-top: 20px;
+            color: #495057;
+        }
+
+        p {
+            margin: 10px 20px;
+        }
+
+        nav {
+            background: #007bff;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Table Styles */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 2px solid #007bff;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Image Styles */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+
+        /* List Styles */
+        ul {
+            margin: 10px 40px;
+            list-style-type: disc;
+        }
+
+        ol {
+            margin: 10px 40px;
+            list-style-type: decimal;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+    </style>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#venn-diagrams">Venn Diagrams</a>
+        <a href="#polynomials">Extraordinary Polynomials</a>
+        <a href="#Extras">Extras</a>
+        <a href="#summary">Summary</a>
+    </nav>
+    <h1>Infinite Number Sets</h1>
+    <div id="introduction">
+    <h2>Introduction</h2>
+    <p>A table is shown below of Number Sets inside the Reals corresponding to their Hyperoperations. The number set will be denoted as \(L_k\) and be called Real \(k^{th}\) level Rationals, and its opposite set will be denoted as \(N_k\) which will be called \(k^{th}\) level Transcendentals. The Set which contains all \(k^{th}\)-level Rationals will be denoted as \(M_k\). There is a way in which the \(k^{th}\) hyperoperation relates to \(M_k\).</p>
+    <table>
+        <tr>
+            <td>\(k\)</td>  <td>\(k^{th}\) Hyperoperation</td>  <td>\(M_k\)</td> <td>\(L_k\)</sub>   <td>\(N_k\)</td></td>
+        </tr>
+        <tr>
+            <td>1</td>  <td>\(H_1\) (Addition)</td>   <td>Integers</td>   <td>"Same as \(M_1\)"</td>   <td>Floating Points</td>
+        </tr>
+        <tr>
+            <td>2</td>   <td>\(H_2\) (Multiplication)</td>   <td>Rationals</td>   <td>"Same as \(M_2\)"</td>   <td>Irrationals</td>
+        </tr>
+        <tr>
+            <td>3</td>   <td>\(H_3\) (Exponentiation)</td>   <td>Algebraics</td> <td>Real Algebraics</td>   <td>Transcendentals</td>
+        </tr>
+        <tr>
+            <td>4</td>   <td>\(H_4\) (Tetration)</td> <td>4th level Rationals</td>   <td>Real 4th level Rationals</td>   <td>4th level Transcendentals</td>
+        </tr>
+        <tr>
+            <td>\(...\)</td>
+            <td>\(...\)</td>
+            <td>\(...\)</td>
+            <td>\(...\)</td>
+            <td>\(...\)</td>
+        </tr>
+        <tr>
+            <td>\(n\)</td>  <td>\(H_n\) (\(n^{th}\) Hyperoperation)</td>    <td>\(n^{th}\) level Rational</td>  <td>Real \(n^{th}\) level Rational</td> <td>\(n^{th}\) level Transcendental</td>    
+        </tr>
+    </table>
+    <br>
+    <p>The Relationship between \(L_k\) and \(N_k\) can be expressed as:</p>
+    $$L_k \cup N_k = &#8477;$$
+    </div>
+    <div id="venn-diagrams">
+    <h2>Venn Diagrams</h2>
+    <p>And \(M_k\), \(N_k\), \(L_k\) can be expressed through this Venn Diagram.</p>
+    <img src="Picture1.svg" alt="VennDiagram1" width="500px">
+    <p>We can also relate \(L_k\), \(L_{k-1}\), \(N_k\), \(N_{k-1}\) through this Venn Diagram and the new set \(S_k\) (\(k^{th}\) Gap) where\(S_{k+1} = L_{k+1} \cap N_k\).</p>
+    <img src="Picture2.svg" alt="VennDiagram2" width="500px">   
+    <h2>Confirmable statements about Infinite Number Systems</h2>
+    <p>We can confirm the following statements:</p>
+    <ol>
+        <li>$$M_1 \subset M_2 \subset M_3 \subset M_4 \subset ...\subset M_n \subset M_{n+1}...$$</li>
+        <li>$$N_1 \subset N_2 \subset N_3 \subset N_4 \subset ...\subset N_n \subset N_{n+1}...$$</li>
+        <li>$$L_1 \supset L_2 \supset L_3 \supset L_4 \supset ...\supset L_n \supset L_{n+1}...$$</li>
+    </ol>
+    </div>
+    <div id="polynomials">
+    <h2>Extraordinary Polynomials</h2>
+        <p>Here the variables are integers except x.</p>
+        <p>We'll see a special type of Polynomial which encodes the solution to all the numbers in  \(M_k\) we'll call \(Q_k\). We'll call the General form of \(Q_k\) as \(Q_k\Xi\).</p>
+        <p>To show that what we are making, we'll see the polynomial type \(Q_1\), which encodes all the numbers in the set \(M_1\)(Integers). The general form of \(Q_1\) is:
+        $$Q_1\Xi\space :\space x+a=0 $$
+        </p>
+        <p>Likewise, we can encode all the numbers in the set \(M_2\) as \(Q_2\), \(M_3\) as \(Q_3\)(Regular Polynomials), and so on...</p>
+        <p>$$Q_2\Xi\space :\space ax+b=0,  a\neq 0$$</p>
+        <p>$$Q_3\Xi\space :\space \sum\limits_{n=0}^{k}{a_{n}x^n}=0, a_k\neq 0$$</p>
+        <p>$$Q_4\Xi=???\space\text{(Could have terms having mix of addition, multiplication, exponentiation, and tetration.)}$$</p>
+        <p>$$...$$</p>
+        <h3>Solutions to these types of Polynomials</h3>
+        <p>The solution of \(Q_k\Xi\) are:</p>
+        <p>$$k=1;\space x=-a$$</p>
+        <p>$$k=2;x=-{b\over a}$$</p>
+        <p>$$k=3;\space\text{This form of polynomial has some polynomial formulas from degrees 1 to 4 but dosent have "algebraic "formulas for degrees 5 and so on. One of those are the quadratic formula:}$$$$ax^2+bx+c=0, a\neq 0\implies x={-b\pm\sqrt{b^2-4ac}\over 2a}$$</p>
+        <p>$$k=4;?!?\text{ (We haven't even constructed }Q_4\Xi\text{, so we cant properly study it and make formulas.)}$$</p>
+        <p>$$...$$</p>
+        <h3>Strange and Hypothetical forms of imaginary numbers of \(M_k\)</h3>
+        <p>The complex polynomials \(Q_k, k>3\), can be so much complex and strange that it could contain roots which are not even on the complex plane, maybe they might be some new variations of imaginary numbers, something like super-imaginary numbers.</p>
+    </div>
+    <div id="Extras">
+    <h2>Extra things related to this topic</h2>
+    <h3>The Largest Constructable Rational Sets</h3>
+    <p>The Largest Constructable Rational Set we'll call A and it's Real Part B are defined as:
+        $$\lim_{p\to\infty} M_k=A$$
+        $$\lim_{q\to\infty} N_k=B$$
+    </p>
+    <h3>Conjectures</h3>
+    <h4>Conjecture G1</h4>
+    $$B = \text{Set of all Real Computable Numbers?}$$
+    <h4>Conjecture G2</h4>
+    $$\exists x \text{(}\pi, e, \gamma\text{(Euler's Constant)}, \delta\text{(Feigenbaum Constant)}\in N_x)? $$
+    <h3>Function</h3>
+    <h4>Number Level Quantifier Function</h4>
+    <p>The Number Level Quantifier Function or \(Q(x)\) is a function which which maps input x to input y such that \(M_y\) is the smallest \(M_k\) set that contains \(x\). Examples of some \(Q(x)\) are:
+        <ul>
+            <li>\(Q(4)=1\)</li>
+            <li>\(Q(-{3\over 61})=2\)</li>
+            <li>\(Q(-\sqrt[5]{18})=3\)</li>
+            <li>\(Q(5+18i)=3\)</li>
+            <li>\(\exists x(x^{x^x}=1566)\implies Q(x)=4\)</li>
+            <li>\(\exists x(^xx-3x^x+5x^3-9x^2+13=0)\implies Q(x)=5\)</li>
+            <li>\(Q(\pi)=???\)</li>
+            <li>\(Q(\delta)=???\)</li>
+        </ul>
+    </p>
+    <h3>The Notation of the Super Imaginary Numbers of \(k^{th}\) non Real Rationals.</h3>
+    <p>All the numbers in the difference \(M_k\backslash N_k\) can have imaginary or other types of super-imaginary numbers which will be denoted as \(Y_k\). As from \(M_3\), the sets contain more than just Real Numbers, we'll denote the Reals which are at the very start of the strange imaginary numbers \(Y_0\), then Complex Numbers as \(Y_1\), then the Super-Complex Numbers from the set \(M_4\)(4th level Rationals) as \(Y_2\), in general the strange imaginary numbers which come from \(M_n\) will be denoted as \(Y_{n-2}\).And we can also confirm a new statement:
+        $$Y_0(\text{Reals}) \subset Y_1(\text{Complex Numbers}) \subset Y_2(\text{Super-Complex Numbers from }M_4) \subset Y_3 \subset ... \subset Y_n \subset Y_{n+1}\subset...$$
+    </p>
+    <p>
+    And the name to the Strange Complex Numbers will be denoted as \(Z_k\).
+    For eg:{1 as \(Z_0\)(Reals, \(Y_0\)), i as \(Z_1\)(Imaginary Numbers \(Y_1\)),\(Z_2\) for \(Y_2\),\(Z_3\) for \(Y_3\),...,\(Z_n\) for \(Y_n\),...}
+    </p>
+    <p>
+    And even if these strange imaginary number sets \(Y_k\) are from Complex Rational Sets(\(M_{k+2}\)), they can have numbers which are not in \(M_{k+2}\), atleast which are in the form
+    $$\text{Non-Computable Number} \cdot Z_k$$(For G1 Conjecture).
+    </p>
+    </div>
+    <div id="summary">
+    <h2>Summary</h2>
+    <p>
+    In This chapter we studied about New types of sets which are generated from Hyperoperations, New types of Extraordinary Polynomials and theorized about their general form we have conjectured 2 questions and made a function on the topic and we've theorized about variations of Complex Numbers which generate from these sets.
+    </p>
+    </div>
+</body> 
+</html>
