@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Hyperoperation below addition (Incrementation)</title>
+        <style>
+            #Title{
+                text-align: center;
+                font-size: 60px;
+            }
+            .Sections{
+                background-color: black;
+                padding:8px;
+                border-radius: 10px;
+            }
+            #Section-1{
+                color: white;
+            }
+            #ChaptersList{
+                background-color: green;
+                padding: 6px;
+                border-radius: 10px;
+            }
+            .Subtopic{
+                background-color: #ADADAD;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            .GeneralFormulaForm{
+                text-align:center;
+                font-family:"Cascadia Code";
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+            }
+            h3{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+        </style>
+        </head>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <body>
+        <h1 id="Title">Concept of the Hyperoperation before addition</h1>
+        <div class="Sections" id="Section-1">
+            <div id="ChaptersList">
+                <h2>Subtopics/Chapters</h2>
+                <ul style="font-size: 20px; font-family:'Comic Sans MS';">
+                    <li>Introduction</li>
+                    <li>Notations</li>
+                    <li>Basic Definitions</li>
+                    <li>Generalization</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="Sections" id="Section-2">
+            <div class="Subtopic" id="Subtopic-1">
+                <h2 class="Subtopic-Name" id="SubtopicName1">Introduction</h2>
+                <p>This is a topic about denoting, defining a hyperoperation called Incrementation, which is a hyperoperation that comes before addition. Or in other words, as repeated Addition gives Multiplication, and as repeated Multiplication gives Exponentiation, this is an operation when repeated gives addition. And it is the 0th Hyperoperation of the Hyperoperation sequence as Addition is the 1st Hyperoperation. At the end, we will even derive a General Formula for this Hyperoperation.</p>
+            </div>
+            <div class="Subtopic" id="Subtopic-2">
+                <h2 class="Subtopic-Name" id="SubtopicName2">Notations</h2>
+                <h3>Base Notation</h3>
+                <p>Any Base \(a\) will be denoted as "\(_{[a]}\)" {Subscript: Base inside Square brackets}.</p>
+                <h3>Incremental Term Notation</h3>
+                <p>Any Incremental Term \(b\) will be denoted as "\(\Delta b\)" {Delta (Incremental Term)}, or you can just write it as "\(b\)", especially, if the term is right next to the base.</p>
+                <h3>Decremental Term Notation</h3>
+                <p>Any Decremental Term \(c\) will be denoted as "\(\nabla c\)" {Nabla (Decremental Term)}.</p>
+                <h3>Series End Notation</h3>
+                <p>The End of the Series will be represented as "\(;\)" {Semi-colon}.</p>
+            </div>
+            <div class="Subtopic" id="Subtopic-3">
+                <h2 class="Subtopic-Name" id="SubtopicName3">Basic Definitions</h2>
+                <h3>Identity of the Hyperoperation</h3>
+                <p>$$_{[a]};=a$$</p>
+                <h3>List of Incremental Series</h3>
+                <p>$$_{[a]}a;=a+1$$</p>
+                <p>$$_{[a]}a\Delta a;=a+2$$</p>
+                <p>$$_{[a]}a\Delta a\Delta a;=a+3$$</p>
+                <p>$$...$$</p>
+                <p>$$_{[a]}\underbrace{a\Delta a\Delta a\Delta...\Delta a}_{m};=a+m$$</p>
+                <h3>List of Decremental Series</h3>
+                <p>$$_{[b]}\nabla b;=b-1$$</p>
+                <p>$$_{[b]}\nabla b\nabla b;=b-2$$</p>
+                <p>$$_{[b]}\nabla b\nabla b\nabla b;=b-3$$</p>
+                <p>$$...$$</p>
+                <p>$$_{[b]}\underbrace{\nabla b\nabla b\nabla b\nabla...\nabla b}_{n};=b-n$$</p>
+                <h3>Basic Hybrid Series</h3>
+                <p>This is the series which contains Both Incremental and Decremental Terms.</p>
+                <span>
+                    <p>For example:</p>
+                    <p>$$_{[d]}\nabla d\Delta d\Delta d\Delta d\nabla d\Delta d;$$</p>
+                    <p>We can calculate it by adding the base and replacing every incremental term by \(+1\) and every decremental term by \(-1\) as:</p>
+                    <p>\(\Rightarrow{d-1+1+1+1-1+1}\)</p>
+                    <p>\(\Rightarrow{d-2+4}\)</p>
+                    <p>\(\Rightarrow{d+2}\)</p>
+                    <p>$$\therefore\space _{[d]}\nabla d\Delta d\Delta d\Delta d\nabla d\Delta d;=d+2$$</p>
+                </span>
+                <h4>General Basic Hybrid Series</h4>
+                <p>
+                    The general basic hybrid series is given here:
+                    $$_{[k]}\underbrace{\Delta k\Delta k\Delta k\Delta...\Delta k}_{x}\underbrace{\nabla k\nabla k\nabla k\nabla...\nabla k}_{y}=k+x-y$$
+                </p>
+                <br>
+                <p>In the next subtopic, we will generalize Incrementation by knowing how to let the terms of the sequence be any number, not only be equal to the base.</p>
+            </div>
+            <div class="Subtopic" id="Subtopic-4">
+                <h2 class="Subtopic-Name" id="SubtopicName4">Generalization</h2>
+                <h3>Introduction to the Generalization</h3>
+                <p>Till now, we knew how to compute the series in which all the terms were eqaul to the base. Now, in this subtopic, we will know how to compute a series were terms have freedom to have any value and not only equal to the base. By knowing how to do this, we will have generalized Incrementation.</p>
+                <h3>Computing a General Series</h3>
+                <p>Let's look at a series which has one base, one incremental term and one decremental term which have different variables for different values, and then we will seperate and understand the contribution of each part of the series and add them to get the total.</p>
+                <p>This is the series we will see: $$_{[a]}\Delta b\nabla c;$$</p>
+                <p>These are the parts of the series:</p>
+                <ul>
+                    <li>"\(_{[a]}\)", Base Part: The Base contributes its own value. So, it's contribution is \(+a\).</li>
+                    <li>"\(\Delta b\)", Incremental Term: As it is an incremental term, it adds 1 and adds the differnce of the base from the term. So, it's contribution is \(+1+(b-a)\).</li>
+                    <li>"\(\nabla c\)", Decremental Term: As it is a decremental term, it subtracts 1 and adds the difference of the base from the term. So, it's contribution is \(-1+(c-a)\).</li>
+                </ul>
+                <p>Now, as we know the contributions, we can add them to get the value of the series.</p>
+                <span>
+                    <p>\(\Rightarrow{+a+1+(b-a)-1+(c-a)}\)</p>
+                    <p>\(\Rightarrow{a+1+b-a-1+c-a}\)</p>
+                    <p>\(\Rightarrow{(a+(-a)+(-a))+(1-1)+(b)+(c)}\)</p>
+                    <p>\(\Rightarrow{b+c-a}\)</p>
+                    <p>$$\therefore\space _{[a]}\Delta b\nabla c;=b+c-a$$</p>
+                </span>
+                <p>Now, we just knew how to calculate the general series. Next, we will see the General Series of Incrementation and see what is the General Formula for it.</p>
+                <h3>The General Series and Formula of Incrementation</h3>
+                <h4>The General Series of Incrementation</h4>
+                <p>This is the general series of Incrementation:</p>
+                <p>$$_{[a]}b_1\Delta b_2\Delta b_3\Delta...\Delta b_k\nabla c_1\nabla c_2\nabla c_3\nabla...\nabla c_n;$$</p>
+                <h4>The General Formula for Incrementation</h4>
+                <p>After we compute the general series by adding all of its part's contributions and by some simplification, we can write the general formula in two forms, the Ordinary Form and the Compact Form.</p>
+                <span>
+                    <p class="GeneralFormulaForm" id="GeneralFormulaForm1">The Ordinary Form is:</p>
+                    $$a(1-k-n)+k-n+b_1+b_2+b_3+...+b_k+c_1+c_2+c_3+...+c_n$$
+                </span>
+                <span>
+                    <p class="GeneralFormulaForm" id="GeneralFormulaForm2">The Compact Form is:</p>
+                    $$a(1-k-n)+k-n+\sum\limits_{p=1}^{k}{b_p}+\sum\limits_{q=1}^{n}{c_q}$$
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
